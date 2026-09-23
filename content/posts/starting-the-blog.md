@@ -10,4 +10,4 @@ Posts published on this site are the original versions. [dev.to](https://dev.to/
 
 New posts are Markdown files in `content/posts`. A pull request builds a preview of the site, including drafts, before anything is merged. Set `draft` to `false` when a post should go live.
 
-More about how the site is put together is on the [about page](/about/).
+A short introduction is on the [about page](/about/).

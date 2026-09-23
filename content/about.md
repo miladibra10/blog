@@ -1,8 +1,8 @@
 ---
 title: "About"
-description: "About this blog."
+description: "Milad is a software engineer, writing about the work."
 ---
 
-This is Milad's blog. Posts are written in Markdown, built with [Hugo](https://gohugo.io/) and the [Archie](https://github.com/athul/archie) theme, and published at [blog.miladibra.com](https://blog.miladibra.com/).
+I'm Milad, a software engineer.
 
-The canonical copy of every post lives here. A full-text [RSS feed](/index.xml) syndicates those posts to [dev.to](https://dev.to/).
+I write here to share my experiences around software engineering, site reliability engineering, and the work that sits next to them.

@@ -1,6 +1,6 @@
 baseURL = "https://blog.miladibra.com/"
 locale = "en-us"
-title = "Milad"
+title = "Milad's blog"
 canonifyURLs = true
 theme = "archie"
 copyright = "© Milad"
