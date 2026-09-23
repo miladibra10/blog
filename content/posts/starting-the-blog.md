@@ -1,13 +1,9 @@
 ---
 title: "Starting the blog"
-description: "Notes will live here first, then syndicate to dev.to from the RSS feed."
+description: "Why I'm sharing stories from software engineering and site reliability engineering."
 date: 2026-09-23T21:00:00Z
 tags: ["meta"]
-tldr: "This site is the canonical home for posts. dev.to imports them from the RSS feed."
+tldr: "I'm sharing stories and fun experiences from software engineering, site reliability engineering, and so on."
 ---
 
-Posts published on this site are the original versions. [dev.to](https://dev.to/) imports them from the [RSS feed](/index.xml) and points the canonical URL back here.
-
-New posts are Markdown files in `content/posts`. A pull request builds a preview of the site, including drafts, before anything is merged. Set `draft` to `false` when a post should go live.
-
-A short introduction is on the [about page](/about/).
+I'm Milad, and I decided to start sharing my stories and fun experiences with people. They'll be about tech: software engineering, site reliability engineering, and so on.
