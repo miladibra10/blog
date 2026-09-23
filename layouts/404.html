@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "header.html" . }}
+    <body>
+        <div class="content">
+            {{ partial "head.html" . }}
+            <main>
+                <h1>Page not found</h1>
+                <p>That URL is not on this site. Go back to the <a href="{{ "/" | relURL }}">home page</a>.</p>
+            </main>
+            {{ partial "footer.html" . }}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+{{- $src := partial "abs-feed-url.html" (dict "Destination" .Destination "Page" .Page) -}}
+<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} />

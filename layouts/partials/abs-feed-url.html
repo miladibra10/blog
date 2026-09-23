@@ -1,0 +1,19 @@
+{{- $dest := .Destination -}}
+{{- $page := .Page -}}
+{{- $result := $dest -}}
+{{- if or (not $dest) (hasPrefix $dest "http://") (hasPrefix $dest "https://") (hasPrefix $dest "mailto:") (hasPrefix $dest "#") (hasPrefix $dest "//") -}}
+  {{- $result = $dest -}}
+{{- else if hasPrefix $dest "/" -}}
+  {{- $base := urls.Parse site.BaseURL -}}
+  {{- $basePath := $base.Path | strings.TrimSuffix "/" -}}
+  {{- $result = printf "%s://%s%s%s" $base.Scheme $base.Host $basePath $dest -}}
+{{- else -}}
+  {{- $pageURL := urls.Parse $page.Permalink -}}
+  {{- $dir := path.Dir ($pageURL.Path | strings.TrimSuffix "/") -}}
+  {{- $joined := path.Clean (path.Join $dir $dest) -}}
+  {{- if and (hasSuffix $dest "/") (not (hasSuffix $joined "/")) -}}
+    {{- $joined = printf "%s/" $joined -}}
+  {{- end -}}
+  {{- $result = printf "%s://%s%s" $pageURL.Scheme $pageURL.Host $joined -}}
+{{- end -}}
+{{- return $result -}}

@@ -1,0 +1,36 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publish blog.miladibra.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo
+        run: ./scripts/install-hugo.sh
+
+      - name: Build
+        run: ./scripts/build.sh "https://blog.miladibra.com/"
+
+      - name: Publish GitHub Pages
+        env:
+          COMMIT_MESSAGE: "deploy: ${{ github.sha }}"
+        run: ./scripts/publish-gh-pages.sh root public

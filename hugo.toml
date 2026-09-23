@@ -1,0 +1,74 @@
+baseURL = "https://blog.miladibra.com/"
+locale = "en-us"
+title = "Milad"
+canonifyURLs = true
+theme = "archie"
+copyright = "© Milad"
+enableRobotsTXT = true
+enableGitInfo = true
+
+[taxonomies]
+  tag = "tags"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  mode = "toggle"
+  useCDN = false
+  subtitle = "Software engineering notes."
+  description = "Software engineering notes by Milad."
+  # Home page, search, and the RSS feed all use this section.
+  mainSections = ["posts"]
+
+[params.author]
+  name = "Milad"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/miladibra10"
+
+# pageRef keeps links under baseURL, including pull-request preview subpaths.
+[[menu.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "All posts"
+  pageRef = "/posts"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 3
+
+[[menu.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 4
+
+[[menu.main]]
+  name = "Search"
+  pageRef = "/search"
+  weight = 5
+
+[[menu.main]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 6
