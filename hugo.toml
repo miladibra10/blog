@@ -16,8 +16,8 @@ enableGitInfo = true
 [params]
   mode = "toggle"
   useCDN = false
-  subtitle = "Software engineering notes."
-  description = "Software engineering notes by Milad."
+  subtitle = "My notes about software engineering and everything!"
+  description = "Notes by Milad."
   # Home page, search, and the RSS feed all use this section.
   mainSections = ["posts"]
 
