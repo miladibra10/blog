@@ -1,5 +1,5 @@
 ---
-title: "Amazed and Disappointed at the Same Time"
+title: "Amazed and disappointed at the same time"
 description: "The story is about a strange bug AI helped me to find and fix!"
 date: 2026-10-11T18:51:37+02:00
 tags: ["AI", "linux", "systemd"]
@@ -73,7 +73,7 @@ I continued the conversation with ChatGPT in the same session. Asked why the iss
 What a roller-coaster ride! I was amazed half an hour ago but disappointed now.
 
 As a last resort, I asked a colleague that has the most experience with this cluster and servers. He started doing some checks very similar checks to suggested checks by ChatGPT in my session.
-After some checks, he mentioned:
+After some checks, he said:
 > \+ Only this server has 498 days of uptime. Maybe some integer overflow. I'll ask chatgpt about it 
 
 
